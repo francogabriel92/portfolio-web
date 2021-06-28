@@ -6,52 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>&lt FGS.dev /&gt</title>
   <script src="https://kit.fontawesome.com/493465ab3f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="manifest" href="/icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <header class="header-animated">
-    <nav>
-      <div class="logo">
+    <nav id="nav">
+      <div class="nav__logo">
         <h1>&lt FGS.dev /&gt</h1>
+        <div class="nav__bars">
+          <i class="fas fa-bars fade"></i>
+          <i class="fas fa-times hidden fade"></i>
+        </div>
       </div>
       <ul class="nav__links">
-        <li class="lang-es"><a href="#main" >Inicio</a></li>
-        <li class="lang-es"><a href="#about-me">Sobre Mi</a></li>
-        <li class="lang-es"><a href="#skills">Habilidades</a></li>
-        <li class="lang-es">Proyectos</li>
-        <li class="lang-es">Contáctame</li>
-        <li class="lang-en hidden"><a href="#main">Home</a></li>
-        <li class="lang-en hidden"><a href="#about-me">About Me</a></li>
-        <li class="lang-en hidden"><a href="#skills">Skills</a></li>
-        <li class="lang-en hidden">Proyects</li>
-        <li class="lang-en hidden">Contact Me</li>
+        <li class="nav__links-item lang-es"><a href="#main" >Inicio</a></li>
+        <li class="nav__links-item lang-es"><a href="#about-me">Sobre Mi</a></li>
+        <li class="nav__links-item lang-es"><a href="#skills">Habilidades</a></li>
+        <li class="nav__links-item lang-es"><a href="#proyects">Proyectos</a></li>
+        <li class="nav__links-item lang-es"><a href="#contact">Contáctame</a></li>
+        <li class="nav__links-item lang-en hidden"><a href="#main">Home</a></li>
+        <li class="nav__links-item lang-en hidden"><a href="#about-me">About Me</a></li>
+        <li class="nav__links-item lang-en hidden"><a href="#skills">Skills</a></li>
+        <li class="nav__links-item lang-en hidden"><a href="#proyects">Proyects</a></li>
+        <li class="nav__links-item lang-en hidden"><a href="#contact">Contact Me</a></li>
+        <li>
+          <div class="lang-menu">
+            <ul>
+              <li>
+                <a href="#" class="es-lang-selector"><img src="https://www.countryflags.io/es/flat/32.png" alt="Spanish flag" /></a>
+              </li>
+              <li>
+                <a href="#" class="en-lang-selector"><img src="https://www.countryflags.io/us/flat/32.png" alt="English flag" /></a>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
-      <div class="lang-menu">
-        <ul>
-          <li>
-            <a href="#" class="es-lang-selector"><img src="https://www.countryflags.io/es/flat/32.png" alt="Spanish flag" /></a>
-          </li>
-          <li>
-            <a href="#" class="en-lang-selector"><img src="https://www.countryflags.io/us/flat/32.png" alt="English flag" /></a>
-          </li>
-        </ul>
-      </div>
     </nav>
     <section id="main" class="header-main">
-      <div class="header-img">
-        <img src="./media/header-illustration.png" alt="Header illustration" />
-      </div>
-      <div class="header-text lang-es">
-        <h4>¡Hola!</h4>
-        <h2>Yo soy Franco Sanchez</h2>
-        <p>Full-stack developer</p>
-      </div>
-      <div class="header-text lang-en hidden">
-        <h4>Hi!</h4>
-        <h2>I'm Franco Sanchez</h2>
-        <p>Full-stack developer</p>
+      <div id="particles-js">
+        <div class="header-box">
+          <div class="header-img">
+            <img src="./media/header-illustration.png" alt="Header illustration" />
+          </div>
+          <div class="header-text lang-es">
+            <h4>¡Hola!</h4>
+            <h2>Yo soy Franco Sanchez</h2>
+            <p>Full-stack developer</p>
+          </div>
+          <div class="header-text lang-en hidden">
+            <h4>Hi!</h4>
+            <h2>I'm Franco Sanchez</h2>
+            <p>Full-stack developer</p>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- Shape Divider -->
     <div class="custom-shape-divider-bottom-1624082087">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -64,19 +94,23 @@
     <section id="about-me" class="main-container">
       <div class="about-text lang-es">
         <h3>Sobre mi</h3>
-        <p>Mi nombre es Franco Gabriel Sanchez, soy un desarrollador fullstack autodidacta. Mi objetivo es obtener experiencia en el área de mi interés y desarrollarme profesionalmente superando mis expectativas y límites y ser feliz haciendo lo que me apasiona.</p>
-        <p>En mis tiempos libres me gusta trabajar en mis proyectos personales, jugar videojuegos, tocar la guitarra y pasar tiempo con mis seres queridos y mi gato.</p>
+        <p>Mi nombre es Franco Gabriel Sanchez, tengo 29 años y vivo en Buenos Aires, Argentina. Soy un desarrollador Full-Stack autodidacta y apasionado de la programación.</p>
+        <p>Lo que más me interesa en el desarrollo de aplicaciones web es el poder realizar algo que la gente encuentre útil y pueda acceder a ello desde cualquier parte del mundo.</p>
+        <p>En mis tiempos libres me gusta tocar la guitarra, salir con mis amigos, conocer gente nueva, trabajar en proyectos personales y jugar videojuegos. ¡Encantado de conocerte!</p>
+        <a href="#contact"><button class="button hvr-back-pulse">CONTÁCTAME</button></a>
       </div>
       <div class="about-text lang-en hidden">
         <h3>About me</h3>
-        <p>My name is Franco Gabriel Sanchez, I'm a self-taught full-stack developer. My goal is to gain experience in my area of interest, grow professionally, overcoming my expectations and limits and be happy doing what I like.</p>
-        <p>In my free time I like to work in my personal proyects, play videogames, play guitar and hang out with my beloved ones and my cat.</p>
+        <p>My name is Franco Gabriel Sanchez, I'm 29 years old and I live in Buenos Aires Argentina. I'm a self-taught full-stack developer and passionate about programming.</p>
+        <p>What interests me most in web application development is being able to do something that people find useful and can access it from anywhere in the world.</p>
+        <p>In my spare time I like to play the guitar, hang out with my friends, meet new people, work on personal projects, and play video games. Nice to meet you!</p>
       </div>
       <div class="about-img-container">
         <img src="./media/resume.webp" alt="resume-icon" />
-        <button class="button lang-es"><i class="fas fa-file-download"></i>  DESCARGAR CV</button>
-        <button class="button lang-en hidden"><i class="fas fa-file-download"></i>  DOWNLOAD RESUME</button>
+        <button class="button lang-es hvr-back-pulse">DESCARGAR CV <i class="fas fa-arrow-circle-down"></i> </button>
+        <button class="button lang-en hvr-back-pulse hidden">DOWNLOAD RESUME <i class="fas fa-arrow-circle-down"></i></button>
       </div>
+      <!-- Shape Divider -->
       <div class="custom-shape-divider-bottom-1624152324">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
@@ -134,7 +168,8 @@
           </div>
         </div>
       </div>
-      <div class="custom-shape-divider-bottom-1624165588">
+      <!-- Shape Divider -->
+      <div class="custom-shape-divider-bottom-1624330272">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
             <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
@@ -142,10 +177,111 @@
         </svg>
       </div>
     </section>
-    <section class="main-container">
-
+    <section id="proyects" class="main-container">
+      <h3 class="proyects-title lang-es">Proyectos</h3>
+      <h3 class="proyects-title lang-en hidden">Proyects</h3>
+      <div class="slide-container">
+        <!-- Navigation Arrows -->
+        <a class="slider__arrow-left arrow-hvr" onclick="nextSlide(-1)"><i class="fas fa-arrow-circle-left"></i></a>
+        <a class="slider__arrow-right arrow-hvr" onclick="nextSlide(1)"><i class="fas fa-arrow-circle-right"></i></a>
+        <div class="proyect-card fade">
+          <h3 class="proyect-card__title">GymApp</h3>
+          <div class="proyect-card__img">
+            <img src="media/proyect-example-img.png" alt="Gymapp screenshot" />
+          </div>
+          <div class="proyect-card__content">
+            <div class="proyect-card__desc">
+              <p class="lang-es">
+                Aplicación de una página dedicada a la gestión de clientes de gimnasios mediante un sistema CRUD.
+              </p>
+              <p class="lang-es">
+                La interfaz de usuario fue realizada con ReactJs y React Router. El backend esta diseñado con NodeJs y Express, cuenta con un sistema de login con tecnología de Json Web Token, testings realizados con Jest y la base de datos esta basada en MongoDB.
+              </p>
+              <p class="lang-es">
+                Tecnologías y librerías utilizadas: ReactJs, React Router, React Bootstrap, Axios, Mongoose, Formik, Yup, MongoDb, JWT, Jest, Bcrypt. 
+              </p>
+            </div>
+            <div class="proyect-card__buttons">
+              <button class="button hvr-back-pulse">DEMO</button>
+              <button class="button lang-es hvr-back-pulse">VER EL CÓDIGO</button>
+            </div>
+          </div>
+        </div>
+        <div class="proyect-card fade">
+          <h3 class="proyect-card__title">Portfolio Web</h3>
+          <div class="proyect-card__img">
+            <img src="media/portfolio-thumbnail.png" alt="Gymapp screenshot" />
+          </div>
+          <div class="proyect-card__content">
+            <div class="proyect-card__desc">
+              <p class="lang-es">
+                Portfolio Web de una página realizado enteramente con HTML5, CSS3 y JavaScript nativo.
+              </p>
+              <p class="lang-es">
+                Tecnologías y librerías utilizadas: ParticleJs, Hover.css. 
+              </p>
+            </div>
+            <div class="proyect-card__buttons">
+              <button class="button hvr-back-pulse">DEMO</button>
+              <button class="button lang-es hvr-back-pulse">VER EL CÓDIGO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Shape Divider -->
+      <div class="custom-shape-divider-top-1624330612">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <section id="contact" class="main-container header-animated">
+      <h3 class="lang-es contact-title">Contáctame</h3>
+      <h3 class="lang-en contact-title hidden">Contact Me</h3>
+      <p class="lang-es">Contáctame si quieres que trabajemos juntos.</p>
+      <p class="lang-en hidden">Contact me if you want us to work together.</p>
+      <div class="contact-links-container">
+        <a href="mailto:francog.sanchez@hotmail.com" class="contact-links">
+          <i class="far fa-envelope"></i>
+          <p class="lang-es">Envíame un mail</p>
+          <p class="lang-en hidden">Mail me</p>
+        </a>
+        <a href="https://github.com/francogabriel92" target="_blank" class="contact-links">
+          <i class="fab fa-github"></i>
+          <p class="lang-es">Sígueme</p>
+          <p class="lang-en hidden">Follow me</p>
+        </a>
+        <a href="https://www.linkedin.com/in/franco-sanchez-a38460215/" target="_blank" class="contact-links">
+          <i class="fab fa-linkedin"></i>
+          <p class="lang-es">Contáctame</p>
+          <p class="lang-en hidden">Contact me</p>
+        </a>
+      </div>
+      <!-- Shape Divider -->
+      <div class="custom-shape-divider-bottom-1624248817">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
     </section>
   </main>
+  <footer>
+    <a href="#nav" class="footer-up">
+      <i class="fas fa-arrow-circle-up"></i>
+      <p class="lang-es">Ir arriba</p>
+      <p class="lang-en hidden">Up</p>
+    </a>
+    <div class="footer-copy">
+      <p class="lang-es">Copyright &copy 2021 Franco Gabriel Sanchez</p>
+      <p class="lang-en hidden">Copyright &copy 2021 Franco Gabriel Sanchez</p>
+    </div>
+  </footer>
+  <!-- ParticlesJS -->
+  <script src="./js/particles.js"></script>
   <script src="./js/app.js"></script>
 </body>
 </html>
