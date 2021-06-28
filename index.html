@@ -38,16 +38,16 @@
         </div>
       </div>
       <ul class="nav__links">
-        <li class="nav__links-item lang-es"><a href="#main" >Inicio</a></li>
-        <li class="nav__links-item lang-es"><a href="#about-me">Sobre Mi</a></li>
-        <li class="nav__links-item lang-es"><a href="#skills">Habilidades</a></li>
-        <li class="nav__links-item lang-es"><a href="#proyects">Proyectos</a></li>
-        <li class="nav__links-item lang-es"><a href="#contact">Contáctame</a></li>
-        <li class="nav__links-item lang-en hidden"><a href="#main">Home</a></li>
-        <li class="nav__links-item lang-en hidden"><a href="#about-me">About Me</a></li>
-        <li class="nav__links-item lang-en hidden"><a href="#skills">Skills</a></li>
-        <li class="nav__links-item lang-en hidden"><a href="#proyects">Proyects</a></li>
-        <li class="nav__links-item lang-en hidden"><a href="#contact">Contact Me</a></li>
+        <li class="nav__links-item lang-es hidden"><a href="#main" >Inicio</a></li>
+        <li class="nav__links-item lang-es hidden"><a href="#about-me">Sobre Mi</a></li>
+        <li class="nav__links-item lang-es hidden"><a href="#skills">Habilidades</a></li>
+        <li class="nav__links-item lang-es hidden"><a href="#proyects">Proyectos</a></li>
+        <li class="nav__links-item lang-es hidden"><a href="#contact">Contáctame</a></li>
+        <li class="nav__links-item lang-en"><a href="#main">Home</a></li>
+        <li class="nav__links-item lang-en"><a href="#about-me">About Me</a></li>
+        <li class="nav__links-item lang-en"><a href="#skills">Skills</a></li>
+        <li class="nav__links-item lang-en"><a href="#proyects">Proyects</a></li>
+        <li class="nav__links-item lang-en"><a href="#contact">Contact Me</a></li>
         <li>
           <div class="lang-menu">
             <ul>
@@ -68,12 +68,12 @@
           <div class="header-img">
             <img src="./media/header-illustration.png" alt="Header illustration" />
           </div>
-          <div class="header-text lang-es">
+          <div class="header-text lang-es hidden">
             <h4>¡Hola!</h4>
             <h2>Yo soy Franco Sanchez</h2>
             <p>Full-stack developer</p>
           </div>
-          <div class="header-text lang-en hidden">
+          <div class="header-text lang-en">
             <h4>Hi!</h4>
             <h2>I'm Franco Sanchez</h2>
             <p>Full-stack developer</p>
@@ -92,23 +92,24 @@
   </header>
   <main>
     <section id="about-me" class="main-container">
-      <div class="about-text lang-es">
+      <div class="about-text lang-es hidden">
         <h3>Sobre mi</h3>
         <p>Mi nombre es Franco Gabriel Sanchez, tengo 29 años y vivo en Buenos Aires, Argentina. Soy un desarrollador Full-Stack autodidacta y apasionado de la programación.</p>
         <p>Lo que más me interesa en el desarrollo de aplicaciones web es el poder realizar algo que la gente encuentre útil y pueda acceder a ello desde cualquier parte del mundo.</p>
         <p>En mis tiempos libres me gusta tocar la guitarra, salir con mis amigos, conocer gente nueva, trabajar en proyectos personales y jugar videojuegos. ¡Encantado de conocerte!</p>
         <a href="#contact"><button class="button hvr-back-pulse">CONTÁCTAME</button></a>
       </div>
-      <div class="about-text lang-en hidden">
+      <div class="about-text lang-en">
         <h3>About me</h3>
         <p>My name is Franco Gabriel Sanchez, I'm 29 years old and I live in Buenos Aires Argentina. I'm a self-taught full-stack developer and passionate about programming.</p>
         <p>What interests me most in web application development is being able to do something that people find useful and can access it from anywhere in the world.</p>
         <p>In my spare time I like to play the guitar, hang out with my friends, meet new people, work on personal projects, and play video games. Nice to meet you!</p>
+        <a href="#contact"><button class="button hvr-back-pulse">CONTACT THIS GUY!</button></a>
       </div>
       <div class="about-img-container">
         <img src="./media/resume.webp" alt="resume-icon" />
-        <button class="button lang-es hvr-back-pulse">DESCARGAR CV <i class="fas fa-arrow-circle-down"></i> </button>
-        <button class="button lang-en hvr-back-pulse hidden">DOWNLOAD RESUME <i class="fas fa-arrow-circle-down"></i></button>
+        <button class="button lang-es hvr-back-pulse hidden">DESCARGAR CV <i class="fas fa-arrow-circle-down"></i> </button>
+        <button class="button lang-en hvr-back-pulse">DOWNLOAD RESUME <i class="fas fa-arrow-circle-down"></i></button>
       </div>
       <!-- Shape Divider -->
       <div class="custom-shape-divider-bottom-1624152324">
@@ -119,8 +120,8 @@
     </section>
     <section id="skills" class="main-container">
       <div class="skills-container">
-        <h3 class="lang-es">Habilidades</h3>
-        <h3 class="lang-en hidden">Skills</h3>
+        <h3 class="lang-es hidden">Habilidades</h3>
+        <h3 class="lang-en">Skills</h3>
         <div class="skills-grid-container">
           <div class="skills-grid-item  skill-item-large1">
             <i class="fab fa-js-square"></i>
@@ -178,8 +179,8 @@
       </div>
     </section>
     <section id="proyects" class="main-container">
-      <h3 class="proyects-title lang-es">Proyectos</h3>
-      <h3 class="proyects-title lang-en hidden">Proyects</h3>
+      <h3 class="proyects-title lang-es hidden">Proyectos</h3>
+      <h3 class="proyects-title lang-en">Proyects</h3>
       <div class="slide-container">
         <!-- Navigation Arrows -->
         <a class="slider__arrow-left arrow-hvr" onclick="nextSlide(-1)"><i class="fas fa-arrow-circle-left"></i></a>
@@ -191,19 +192,31 @@
           </div>
           <div class="proyect-card__content">
             <div class="proyect-card__desc">
-              <p class="lang-es">
+              <p class="lang-es hidden">
                 Aplicación de una página dedicada a la gestión de clientes de gimnasios mediante un sistema CRUD.
               </p>
-              <p class="lang-es">
+              <p class="lang-es hidden">
                 La interfaz de usuario fue realizada con ReactJs y React Router. El backend esta diseñado con NodeJs y Express, cuenta con un sistema de login con tecnología de Json Web Token, testings realizados con Jest y la base de datos esta basada en MongoDB.
               </p>
-              <p class="lang-es">
+              <p class="lang-es hidden">
                 Tecnologías y librerías utilizadas: ReactJs, React Router, React Bootstrap, Axios, Mongoose, Formik, Yup, MongoDb, JWT, Jest, Bcrypt. 
+              </p>
+              <p class="lang-en">
+                One page web-app dedicated to the management of gym clients through a CRUD system.
+              </p>
+              <p class="lang-en">
+                he user interface was made with ReactJs and React Router. The backend is designed with NodeJs and Express, has a login system with Json Web Token technology, tests performed with Jest and the database is based on MongoDB.
+              </p>
+              <p class="lang-en">
+                Techs and frameworks used: ReactJs, React Router, React Bootstrap, Axios, Mongoose, Formik, Yup, MongoDb, JWT, Jest, Bcrypt. 
               </p>
             </div>
             <div class="proyect-card__buttons">
-              <button class="button hvr-back-pulse">DEMO</button>
-              <button class="button lang-es hvr-back-pulse">VER EL CÓDIGO</button>
+              <a href="#" target="_blank">
+                <button class="button hvr-back-pulse">DEMO</button>
+              </a>
+              <button class="button lang-es hidden hvr-back-pulse">VER EL CÓDIGO</button>
+              <button class="button lang-en hvr-back-pulse">GO TO CODE</button>
             </div>
           </div>
         </div>
@@ -214,16 +227,24 @@
           </div>
           <div class="proyect-card__content">
             <div class="proyect-card__desc">
-              <p class="lang-es">
+              <p class="lang-es hidden">
                 Portfolio Web de una página realizado enteramente con HTML5, CSS3 y JavaScript nativo.
               </p>
-              <p class="lang-es">
+              <p class="lang-es hidden">
                 Tecnologías y librerías utilizadas: ParticleJs, Hover.css. 
+              </p>
+              <p class="lang-en">
+                One page web portfolio realized entirely with HTML5, CSS3 and native JavaScript.
+              </p>
+              <p class="lang-en">
+                Techs and frameworks used: ParticleJs, Hover.css. 
               </p>
             </div>
             <div class="proyect-card__buttons">
-              <button class="button hvr-back-pulse">DEMO</button>
-              <button class="button lang-es hvr-back-pulse">VER EL CÓDIGO</button>
+              <a href="https://github.com/francogabriel92/portfolio-web" target="_blank">
+                <button class="button lang-es hvr-back-pulse hidden">VER EL CÓDIGO</button>
+                <button class="button lang-en hvr-back-pulse">GO TO CODE</button>
+              </a>
             </div>
           </div>
         </div>
@@ -238,25 +259,25 @@
       </div>
     </section>
     <section id="contact" class="main-container header-animated">
-      <h3 class="lang-es contact-title">Contáctame</h3>
-      <h3 class="lang-en contact-title hidden">Contact Me</h3>
-      <p class="lang-es">Contáctame si quieres que trabajemos juntos.</p>
-      <p class="lang-en hidden">Contact me if you want us to work together.</p>
+      <h3 class="lang-es contact-title hidden">Contáctame</h3>
+      <h3 class="lang-en contact-title">Contact Me</h3>
+      <p class="lang-es hidden">Contáctame si quieres que trabajemos juntos.</p>
+      <p class="lang-en">Contact me if you want us to work together.</p>
       <div class="contact-links-container">
         <a href="mailto:francog.sanchez@hotmail.com" class="contact-links">
           <i class="far fa-envelope"></i>
-          <p class="lang-es">Envíame un mail</p>
-          <p class="lang-en hidden">Mail me</p>
+          <p class="lang-es hidden">Envíame un mail</p>
+          <p class="lang-en">Mail me</p>
         </a>
         <a href="https://github.com/francogabriel92" target="_blank" class="contact-links">
           <i class="fab fa-github"></i>
-          <p class="lang-es">Sígueme</p>
-          <p class="lang-en hidden">Follow me</p>
+          <p class="lang-es hidden">Sígueme</p>
+          <p class="lang-en">Follow me</p>
         </a>
         <a href="https://www.linkedin.com/in/franco-sanchez-a38460215/" target="_blank" class="contact-links">
           <i class="fab fa-linkedin"></i>
-          <p class="lang-es">Contáctame</p>
-          <p class="lang-en hidden">Contact me</p>
+          <p class="lang-es hidden">Contáctame</p>
+          <p class="lang-en">Contact me</p>
         </a>
       </div>
       <!-- Shape Divider -->
@@ -272,12 +293,11 @@
   <footer>
     <a href="#nav" class="footer-up">
       <i class="fas fa-arrow-circle-up"></i>
-      <p class="lang-es">Ir arriba</p>
-      <p class="lang-en hidden">Up</p>
+      <p class="lang-es hidden">Ir arriba</p>
+      <p class="lang-en">Up</p>
     </a>
     <div class="footer-copy">
-      <p class="lang-es">Copyright &copy 2021 Franco Gabriel Sanchez</p>
-      <p class="lang-en hidden">Copyright &copy 2021 Franco Gabriel Sanchez</p>
+      <p>Copyright &copy 2021 Franco Gabriel Sanchez</p>
     </div>
   </footer>
   <!-- ParticlesJS -->

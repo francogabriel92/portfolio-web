@@ -192,7 +192,7 @@ li {
 
 .about-text button {
   display: block;
-  margin: 25px auto;
+  margin: 25px auto 0;
   text-align: center;
 }
 
@@ -526,19 +526,6 @@ li {
 }
 
 /* Button */
-
-.button1 {
-	box-shadow: 0px 10px 14px -7px var(--primary);
-	background-color:var(--primary);
-  border-radius: 11px;
-  border: none;
-  padding: 10px 15px;
-  color: #ffffff;
-  display: inline-block;
-  text-align: center;
-  font: normal bold .8em "Open Sans", sans-serif;
-  min-width: 169px;
-}
 
 .button {
   cursor: pointer;
