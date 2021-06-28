@@ -862,18 +862,29 @@ li {
     height: 80%;
   }
 
+  .main-container:nth-child(3) {
+    justify-content: center;
+  }
+
   .proyect-card {
-    height: 82vh;
+    height: max-content;
     padding: 15px 15px;
   }
 
   .proyect-card__content {
     justify-content: start;
+    overflow-y: scroll;
+    max-height: 30vh;
+  }
+
+  .proyect-card__desc p {
+    margin-top: 5px;
   }
   
   .proyect-card__buttons {
     margin: auto;
-    padding-top: 0  }
+    padding-top: 10px;
+  }
 
   .button {
     min-width: 80px;
