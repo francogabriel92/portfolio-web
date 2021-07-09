@@ -874,8 +874,13 @@ li {
   .proyect-card__content {
     justify-content: start;
     overflow-y: scroll;
-    max-height: 30vh;
+    max-height: 50vh;
   }
+
+  .proyect-card__img {
+    height: 10vh;
+  }
+
 
   .proyect-card__desc p {
     margin-top: 5px;
