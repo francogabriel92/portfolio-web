@@ -144,10 +144,16 @@ li {
 .header-img {
   min-width: 100px;
   max-width: 350px;
+  border-radius: 50%;
+  border: solid 2px #ffffff;
+  overflow: hidden;
+  z-index: 9999;
+  box-shadow: #000000 1px 2px 2px;
 }
 
 .header-img img {
   max-width: 350px;
+  object-fit: contain;
 }
 
 .main-container {
@@ -211,8 +217,8 @@ li {
   animation: ease-in-out 3s scale-animation ;
 }
 
-.about-img-container button {
-  width: 40%;
+.about-img-container a button {
+  width: 100%;
   justify-content: center;
 }
 
@@ -730,7 +736,7 @@ li {
 
 
   .header-img{
-    height: 60%;
+    height: 40%;
     margin-top: -200px;
   }
 
@@ -752,8 +758,8 @@ li {
 
   .nav__logo {
     background-color: var(--primary);
-    padding-top: 5px;
-    height: 40px;
+    padding-top: 10px;
+    height: 50px;
     font-size: 1em;
     font-weight: 100;
     align-self: center;
@@ -852,10 +858,13 @@ li {
   .about-text {
     width: 80vw;
     margin: 60px auto 15px;
+    overflow-y: scroll;
+    height: 60vh;
   }
 
   .about-img-container{
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
   }
   
   .slider-container {
@@ -894,4 +903,37 @@ li {
   .button {
     min-width: 80px;
   }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .nav__links {
+    font-size: larger;
+  }
+
+  .skills-grid-item i {
+    font-size: 5em;
+    margin-bottom: 10px;
+  }
+  
+  .skills-grid-item p {
+    font-weight: bold;
+  }
+  
+  .icon-filter {
+    height: 80px;
+  }
+
+  .contact-title {
+    font-size: xxx-large;
+  }
+  
+  .contact-links {
+    font-size: x-large;
+  }
+  
+  .contact-links i {
+    font-size: 4em;
+  }
+
 }
